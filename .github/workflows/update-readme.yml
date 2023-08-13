@@ -40,7 +40,6 @@ jobs:
           git add README.md
           git commit -m "Update README with activity"
       
-      - name: Push Changes using Personal Access Token
+      - name: Push Changes
         run: |
-          git remote add origin_with_token https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/manish0kuniyal/manish0kuniyal.git
-          git push origin_with_token HEAD:main
+          git push
