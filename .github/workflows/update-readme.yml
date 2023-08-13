@@ -30,10 +30,17 @@ jobs:
           # For example, you can use echo to modify the README file
           echo "Repository updated at $(date)" >> README.md
       
-      - name: Commit and Push Changes
+      - name: Configure Git
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+      
+      - name: Commit Changes
+        run: |
           git add README.md
           git commit -m "Update README with activity"
-          git push
+      
+      - name: Push Changes using Personal Access Token
+        run: |
+          git remote add origin_with_token https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/manish0kuniyal/manish0kuniyal.git
+          git push origin_with_token HEAD:main
