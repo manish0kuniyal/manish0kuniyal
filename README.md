@@ -3,10 +3,6 @@
 
 
 
-<p>&nbsp;<img align="left" width="47%"  src="https://github-readme-stats.vercel.app/api?username=manish0kuniyal&show_icons=true&locale=en" alt="manish0kuniyal" /></p>
-
-<img align="left" width="47%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=manish0kuniyal&hide_progress=true&bg_color=#67aeca" alt="Top Languages">
-
 
 
 
